@@ -3,7 +3,7 @@ var fileLocation;
 var arduinoPath;
 var pref_browser = {
 		devMode: 0, //Use localhost. If devMode = 0. Use productionServer
-		productionServer:"http://quickiots.com"
+		productionServer:"https://quickiots.com/quick-iots-desktop"
 }
 
 var fs = "";
@@ -335,7 +335,7 @@ var app = {
 				}          
 
 				
-				api_host = (pref.devMode == "1" )?pref.devServer: pref.productionServer;
+				api_host = (pref.devMode == "1" ) ? pref.devServer: pref.productionServer;
 				
 		},
 

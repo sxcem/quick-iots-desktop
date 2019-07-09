@@ -112,7 +112,7 @@ var newApp = {
 				html:`Downloading to "${downloadPath}". Please wait until next message...`
 			})
 			downloadGitRepo_p = util.promisify(downloadGitRepo);
-			await downloadGitRepo_p(`linhtranvu/open-mqtt-gateway/#${server_config.omg_version}`, downloadPath);
+			await downloadGitRepo_p(`quickiot/open-mqtt-gateway/#${server_config.omg_version}`, downloadPath);
 
 			if (fs.existsSync(downloadPath)) {
 
@@ -140,7 +140,7 @@ var newApp = {
 		})
 		downloadGitRepo_p = util.promisify(downloadGitRepo);
 
-		await downloadGitRepo_p(`linhtranvu/Quick-IoTs/#${server_config.editor_version}`, downloadPath);
+		await downloadGitRepo_p(`quickiot/quick-iots-desktop/#${server_config.editor_version}`, downloadPath);
 
 		if (fs.existsSync(`${downloadPath}/version/version_${server_config.editor_version}.ini`)) {
 

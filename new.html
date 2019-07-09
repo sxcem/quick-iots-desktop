@@ -3,6 +3,7 @@
 $(document).ready(function () {   
     
     // app.home();//Get device list json
+    device = alasql("SELECT * FROM ? WHERE status = 1",[device]);
     $( ".tbl-devices tbody" ).html(_.template($("#tpl-datatable").html(),{rows:device}));  
     
 
